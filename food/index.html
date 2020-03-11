@@ -467,11 +467,11 @@
                 
                 
                 <h1 id="hh-food">H&amp;H Food</h1>
-<p>Cost of food in silver = (MaxStat<em>2 or MaxStat</em>3 + OtherStats) /10 /Hunger</p>
-<pre><code class="lua">if MaxStat is +2 then
-    MaxStat *3 else MaxStat *2
-end
-</code></pre>
+<p>Cost of food in silver = (MaxStat*2 or MaxStat*3 + OtherStats) /10 /Hunger</p>
+<div class="highlight"><pre><span></span><span class="kr">if</span> <span class="n">MaxStat</span> <span class="n">is</span> <span class="o">+</span><span class="mi">2</span> <span class="kr">then</span>
+    <span class="n">MaxStat</span> <span class="o">*</span><span class="mi">3</span> <span class="kr">else</span> <span class="n">MaxStat</span> <span class="o">*</span><span class="mi">2</span>
+<span class="kr">end</span>
+</pre></div>
 
 <h2 id="strength">Strength</h2>
 <ul>
@@ -664,6 +664,8 @@ end
       <script src="../assets/javascripts/application.8e03edeb.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>
