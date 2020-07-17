@@ -492,10 +492,8 @@
                 
                 <h1 id="food">Food</h1>
 <p>F/H values in this list are relative to my current qualities!</p>
-<p>Cost of food in silver = (MaxStat*2 or MaxStat*3 + OtherStats) /10 /Hunger</p>
-<div class="highlight"><pre><span></span><span class="kr">if</span> <span class="n">MaxStat</span> <span class="n">is</span> <span class="o">+</span><span class="mi">2</span> <span class="kr">then</span>
-    <span class="n">MaxStat</span> <span class="o">*</span><span class="mi">3</span> <span class="kr">else</span> <span class="n">MaxStat</span> <span class="o">*</span><span class="mi">2</span>
-<span class="kr">end</span>
+<p>Cost of food in silver =</p>
+<div class="highlight"><pre><span></span><span class="nb">math.floor</span><span class="p">(</span><span class="nb">math.sqrt</span><span class="p">(</span><span class="n">FEP</span> <span class="o">*</span> <span class="n">FEP</span><span class="o">/</span><span class="n">Hunger</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 <h2 id="strength">Strength</h2>
